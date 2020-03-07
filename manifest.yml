@@ -1,0 +1,15 @@
+---
+applications:
+- name: SDStestAppNewrelic
+  memory: 1GB
+  disk_quota: 1GB
+  instances: 1
+  stack: cflinuxfs3
+  buildpacks: 
+  - nodejs_buildpack
+  services:
+    - cpe_newrelic
+  env:
+    NEW_RELIC_LICENSE_KEY: d08d00d195d0e43dbb13450a579346bf7b0a8f02
+    NEW_RELIC_APP_NAME: 'SDStestAppNewrelic - Test'
+ 
